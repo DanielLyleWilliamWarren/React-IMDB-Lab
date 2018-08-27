@@ -4,14 +4,18 @@ import Films from './Films.js'
 class FilmList extends Component{
   render(){
 // console.log(this.props.films);
+console.log(this.props.moreInfo);
 const filmComponents = this.props.films.map((film) => {
-  return(<Films title = {film.title} key={film.id}> </Films>);
+  return(<Films title = {film.title} key={film.id} url={film.url}></Films>);
 })
     return(
+      <div>
       <ul>
-        These are my films:
+        UK Opening This Week
         {filmComponents}
       </ul>
+      <a class="click-button" href={this.props.moreInfo}>Show Time!</a>
+      </div>
     );
   }
 }

@@ -1,0 +1,12 @@
+.click-button {
+    background-color: #136cb2;
+    color: #ffffff;
+    display: table-cell;
+    font-family: Verdana,Arial,Sans-serif;
+    font-size: 18px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
+}

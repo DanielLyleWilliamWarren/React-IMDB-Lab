@@ -3,9 +3,17 @@ import React, {Component} from 'react';
 const Films = function (props) {
 
   return (
-    <li>
-      <h4>{props.title}</h4>
-    </li>
+    <div>
+<table>
+
+<tr>
+  <td>{props.title}</td>
+  <td>{props.url}></td>
+</tr>
+
+
+</table>
+    </div>
   );
 }
 
